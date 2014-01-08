@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Hery Ratsimihah. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ClockViewController.h"
 
-@interface ViewController ()
+@interface ClockViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ClockViewController
 
 - (void)viewDidLoad
 {

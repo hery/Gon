@@ -14,13 +14,16 @@
 		4446D58F187C8D8B00E597ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4446D58E187C8D8B00E597ED /* main.m */; };
 		4446D593187C8D8B00E597ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4446D592187C8D8B00E597ED /* AppDelegate.m */; };
 		4446D596187C8D8B00E597ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4446D594187C8D8B00E597ED /* Main.storyboard */; };
-		4446D599187C8D8B00E597ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4446D598187C8D8B00E597ED /* ViewController.m */; };
+		4446D599187C8D8B00E597ED /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4446D598187C8D8B00E597ED /* ClockViewController.m */; };
 		4446D59B187C8D8B00E597ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4446D59A187C8D8B00E597ED /* Images.xcassets */; };
 		4446D5A2187C8D8B00E597ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4446D5A1187C8D8B00E597ED /* XCTest.framework */; };
 		4446D5A3187C8D8B00E597ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4446D582187C8D8B00E597ED /* Foundation.framework */; };
 		4446D5A4187C8D8B00E597ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4446D586187C8D8B00E597ED /* UIKit.framework */; };
 		4446D5AC187C8D8B00E597ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4446D5AA187C8D8B00E597ED /* InfoPlist.strings */; };
 		4446D5AE187C8D8B00E597ED /* GonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4446D5AD187C8D8B00E597ED /* GonTests.m */; };
+		44AEEAC0187C8F0B00CC3494 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEABF187C8F0B00CC3494 /* SettingsViewController.m */; };
+		44AEEAC3187CBD5100CC3494 /* EmailServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEAC2187CBD5100CC3494 /* EmailServiceViewController.m */; };
+		44AEEAC6187CBD5E00CC3494 /* SocialNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEAC5187CBD5E00CC3494 /* SocialNetworkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,20 @@
 		4446D591187C8D8B00E597ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4446D592187C8D8B00E597ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4446D595187C8D8B00E597ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4446D597187C8D8B00E597ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4446D598187C8D8B00E597ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4446D597187C8D8B00E597ED /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		4446D598187C8D8B00E597ED /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		4446D59A187C8D8B00E597ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4446D5A0187C8D8B00E597ED /* GonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4446D5A1187C8D8B00E597ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4446D5A9187C8D8B00E597ED /* GonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GonTests-Info.plist"; sourceTree = "<group>"; };
 		4446D5AB187C8D8B00E597ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4446D5AD187C8D8B00E597ED /* GonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GonTests.m; sourceTree = "<group>"; };
+		44AEEABE187C8F0B00CC3494 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		44AEEABF187C8F0B00CC3494 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		44AEEAC1187CBD5100CC3494 /* EmailServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailServiceViewController.h; sourceTree = "<group>"; };
+		44AEEAC2187CBD5100CC3494 /* EmailServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailServiceViewController.m; sourceTree = "<group>"; };
+		44AEEAC4187CBD5E00CC3494 /* SocialNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworkViewController.h; sourceTree = "<group>"; };
+		44AEEAC5187CBD5E00CC3494 /* SocialNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +124,14 @@
 				4446D591187C8D8B00E597ED /* AppDelegate.h */,
 				4446D592187C8D8B00E597ED /* AppDelegate.m */,
 				4446D594187C8D8B00E597ED /* Main.storyboard */,
-				4446D597187C8D8B00E597ED /* ViewController.h */,
-				4446D598187C8D8B00E597ED /* ViewController.m */,
+				4446D597187C8D8B00E597ED /* ClockViewController.h */,
+				4446D598187C8D8B00E597ED /* ClockViewController.m */,
+				44AEEABE187C8F0B00CC3494 /* SettingsViewController.h */,
+				44AEEABF187C8F0B00CC3494 /* SettingsViewController.m */,
+				44AEEAC1187CBD5100CC3494 /* EmailServiceViewController.h */,
+				44AEEAC2187CBD5100CC3494 /* EmailServiceViewController.m */,
+				44AEEAC4187CBD5E00CC3494 /* SocialNetworkViewController.h */,
+				44AEEAC5187CBD5E00CC3494 /* SocialNetworkViewController.m */,
 				4446D59A187C8D8B00E597ED /* Images.xcassets */,
 				4446D589187C8D8B00E597ED /* Supporting Files */,
 			);
@@ -249,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4446D599187C8D8B00E597ED /* ViewController.m in Sources */,
+				44AEEAC6187CBD5E00CC3494 /* SocialNetworkViewController.m in Sources */,
+				4446D599187C8D8B00E597ED /* ClockViewController.m in Sources */,
 				4446D593187C8D8B00E597ED /* AppDelegate.m in Sources */,
 				4446D58F187C8D8B00E597ED /* main.m in Sources */,
+				44AEEAC3187CBD5100CC3494 /* EmailServiceViewController.m in Sources */,
+				44AEEAC0187C8F0B00CC3494 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +480,7 @@
 				4446D5B3187C8D8B00E597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4446D5B4187C8D8B00E597ED /* Build configuration list for PBXNativeTarget "GonTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +489,7 @@
 				4446D5B6187C8D8B00E597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
