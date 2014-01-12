@@ -10,4 +10,9 @@
 
 @interface SettingsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *wakeUpTime;
+@property (weak, nonatomic) IBOutlet UIDatePicker *voiceDelay;
+
+- (IBAction)applySettings:(id)sender;
+
 @end

@@ -24,6 +24,12 @@
 		44AEEAC0187C8F0B00CC3494 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEABF187C8F0B00CC3494 /* SettingsViewController.m */; };
 		44AEEAC3187CBD5100CC3494 /* EmailServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEAC2187CBD5100CC3494 /* EmailServiceViewController.m */; };
 		44AEEAC6187CBD5E00CC3494 /* SocialNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEAC5187CBD5E00CC3494 /* SocialNetworkViewController.m */; };
+		44AEEAC8187D0E9E00CC3494 /* things.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44AEEAC7187D0E9E00CC3494 /* things.mp3 */; };
+		44AEEACC187D100400CC3494 /* MayhemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEACB187D100400CC3494 /* MayhemViewController.m */; };
+		44AEEB0F187D15D900CC3494 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AEEB0E187D15D900CC3494 /* AVFoundation.framework */; };
+		44D3583918822D1F0027B1E8 /* tina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D3583818822D1F0027B1E8 /* tina.mp3 */; };
+		44D3583B1882387F0027B1E8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D3583A1882387F0027B1E8 /* Social.framework */; };
+		44D3583D18823E2E0027B1E8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D3583C18823E2E0027B1E8 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,13 @@
 		44AEEAC2187CBD5100CC3494 /* EmailServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailServiceViewController.m; sourceTree = "<group>"; };
 		44AEEAC4187CBD5E00CC3494 /* SocialNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworkViewController.h; sourceTree = "<group>"; };
 		44AEEAC5187CBD5E00CC3494 /* SocialNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworkViewController.m; sourceTree = "<group>"; };
+		44AEEAC7187D0E9E00CC3494 /* things.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = things.mp3; sourceTree = "<group>"; };
+		44AEEACA187D100400CC3494 /* MayhemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MayhemViewController.h; sourceTree = "<group>"; };
+		44AEEACB187D100400CC3494 /* MayhemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MayhemViewController.m; sourceTree = "<group>"; };
+		44AEEB0E187D15D900CC3494 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44D3583818822D1F0027B1E8 /* tina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tina.mp3; path = ../../../Desktop/tina.mp3; sourceTree = "<group>"; };
+		44D3583A1882387F0027B1E8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		44D3583C18823E2E0027B1E8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D3583D18823E2E0027B1E8 /* Accounts.framework in Frameworks */,
+				44D3583B1882387F0027B1E8 /* Social.framework in Frameworks */,
+				44AEEB0F187D15D900CC3494 /* AVFoundation.framework in Frameworks */,
 				4446D585187C8D8B00E597ED /* CoreGraphics.framework in Frameworks */,
 				4446D587187C8D8B00E597ED /* UIKit.framework in Frameworks */,
 				4446D583187C8D8B00E597ED /* Foundation.framework in Frameworks */,
@@ -110,6 +126,9 @@
 		4446D581187C8D8B00E597ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44D3583C18823E2E0027B1E8 /* Accounts.framework */,
+				44D3583A1882387F0027B1E8 /* Social.framework */,
+				44AEEB0E187D15D900CC3494 /* AVFoundation.framework */,
 				4446D582187C8D8B00E597ED /* Foundation.framework */,
 				4446D584187C8D8B00E597ED /* CoreGraphics.framework */,
 				4446D586187C8D8B00E597ED /* UIKit.framework */,
@@ -132,6 +151,9 @@
 				44AEEAC2187CBD5100CC3494 /* EmailServiceViewController.m */,
 				44AEEAC4187CBD5E00CC3494 /* SocialNetworkViewController.h */,
 				44AEEAC5187CBD5E00CC3494 /* SocialNetworkViewController.m */,
+				44AEEACA187D100400CC3494 /* MayhemViewController.h */,
+				44AEEACB187D100400CC3494 /* MayhemViewController.m */,
+				44AEEAC9187D0EA300CC3494 /* Resources */,
 				4446D59A187C8D8B00E597ED /* Images.xcassets */,
 				4446D589187C8D8B00E597ED /* Supporting Files */,
 			);
@@ -165,6 +187,15 @@
 				4446D5AA187C8D8B00E597ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44AEEAC9187D0EA300CC3494 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44D3583818822D1F0027B1E8 /* tina.mp3 */,
+				44AEEAC7187D0E9E00CC3494 /* things.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +274,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44AEEAC8187D0E9E00CC3494 /* things.mp3 in Resources */,
+				44D3583918822D1F0027B1E8 /* tina.mp3 in Resources */,
 				4446D59B187C8D8B00E597ED /* Images.xcassets in Resources */,
 				4446D58D187C8D8B00E597ED /* InfoPlist.strings in Resources */,
 				4446D596187C8D8B00E597ED /* Main.storyboard in Resources */,
@@ -268,6 +301,7 @@
 				4446D599187C8D8B00E597ED /* ClockViewController.m in Sources */,
 				4446D593187C8D8B00E597ED /* AppDelegate.m in Sources */,
 				4446D58F187C8D8B00E597ED /* main.m in Sources */,
+				44AEEACC187D100400CC3494 /* MayhemViewController.m in Sources */,
 				44AEEAC3187CBD5100CC3494 /* EmailServiceViewController.m in Sources */,
 				44AEEAC0187C8F0B00CC3494 /* SettingsViewController.m in Sources */,
 			);
