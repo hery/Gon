@@ -16,6 +16,7 @@
     AVAudioPlayer *audioPlayer;
     ACAccountStore *accountStore;
     ACAccount *facebookAccount;
+    AVSpeechSynthesizer *synthesizer;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *clockTimeLabel;

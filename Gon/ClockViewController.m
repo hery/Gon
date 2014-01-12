@@ -21,6 +21,8 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(playBaribeau)];
     [self.view addGestureRecognizer:tap];
     self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    synthesizer = [[AVSpeechSynthesizer alloc] init];
+
     
     // NSLog(@"XS to FB? %@", [SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook] ? @"YES!" : @"Nope.");
     
@@ -70,11 +72,10 @@
     // Fetch Facebook notifications
     NSString *utteranceString = @"Good morning Hery! ";
     utteranceString = [utteranceString stringByAppendingString:self.getFacebookMessages];
-//    AVSpeechUtterance *goodMorning = [[AVSpeechUtterance alloc] initWithString:utteranceString];
-//    goodMorning.rate = 0.2f;
-//    goodMorning.preUtteranceDelay = 3.0f;
-//    AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc] init];
-//    [synth speakUtterance:goodMorning];
+    AVSpeechUtterance *goodMorning = [[AVSpeechUtterance alloc] initWithString:utteranceString];
+    goodMorning.rate = 0.2f;
+    goodMorning.preUtteranceDelay = 1.5f;
+    [synthesizer speakUtterance:goodMorning];
 }
 
 - (void)playBaribeau
@@ -93,7 +94,6 @@
 
 - (NSString *)getFacebookMessages
 {
-    __block NSString *facebookMessagesString = @"";
     NSURL *requestURL = [NSURL URLWithString:@"https://graph.facebook.com/me/inbox"];
     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeFacebook requestMethod:SLRequestMethodGET URL:requestURL parameters:nil];
     request.account = facebookAccount;
@@ -108,15 +108,26 @@
                 NSDictionary *comments = [thread objectForKey:@"comments"];
                 NSArray *data = [comments objectForKey:@"data"];
                 // process messages in reverse order
-                for (int i=[data count]-1; i>=[data count]-unread; i--) {
+                for (int i=[data count]-1-unread-2; i<=[data count]-1; i++) { // -2 = offset for thread context, literally.
                     NSDictionary *messageDictionary = [data objectAtIndex:i];
                     NSString *messageString = [messageDictionary objectForKey:@"message"];
                     NSDictionary *senderDictionary = [messageDictionary objectForKey:@"from"];
                     NSString *senderNameString = [senderDictionary objectForKey:@"name"];
                     NSString *formattedFacebookMessageString = [[NSString alloc] initWithFormat:@"From %@: %@", senderNameString, messageString];
-                    facebookMessagesString = [facebookMessagesString stringByAppendingString:formattedFacebookMessageString];
-                    // But performRequestWithHandler is asynchronous.
+                    AVSpeechUtterance *facebookMessageUtterance = [[AVSpeechUtterance alloc] initWithString:formattedFacebookMessageString];
+                    facebookMessageUtterance.rate = 0.2f;
+                    facebookMessageUtterance.preUtteranceDelay = 0.0f;
+                    [synthesizer speakUtterance:facebookMessageUtterance];
                 }
+                
+                // Thread separator
+                NSString *nextString = [[NSString alloc] initWithFormat:@"Next"];
+                AVSpeechUtterance *nextUtterance = [[AVSpeechUtterance alloc] initWithString:nextString];
+                nextUtterance.rate = 0.2f;
+                nextUtterance.preUtteranceDelay = 0.0f;
+                [synthesizer speakUtterance:nextUtterance];
+            } else {
+                
             }
         }
     }];
