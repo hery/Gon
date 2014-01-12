@@ -93,6 +93,7 @@
 
 - (NSString *)getFacebookMessages
 {
+    __block NSString *facebookMessagesString = @"";
     NSURL *requestURL = [NSURL URLWithString:@"https://graph.facebook.com/me/inbox"];
     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeFacebook requestMethod:SLRequestMethodGET URL:requestURL parameters:nil];
     request.account = facebookAccount;
@@ -112,9 +113,10 @@
                     NSString *messageString = [messageDictionary objectForKey:@"message"];
                     NSDictionary *senderDictionary = [messageDictionary objectForKey:@"from"];
                     NSString *senderNameString = [senderDictionary objectForKey:@"name"];
-                    NSLog(@"From %@: %@", senderNameString, messageString);
+                    NSString *formattedFacebookMessageString = [[NSString alloc] initWithFormat:@"From %@: %@", senderNameString, messageString];
+                    facebookMessagesString = [facebookMessagesString stringByAppendingString:formattedFacebookMessageString];
+                    // But performRequestWithHandler is asynchronous.
                 }
-                // NSLog(@"%@", thread);
             }
         }
     }];
