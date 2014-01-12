@@ -1,10 +1,19 @@
 Gon
 ===
 
-Her. (Haven't seen the movie, but that's pretty much what the app is about.)
+Her. 
 
 ## 1.0
 
-* Alarm: store music file in device, play it at wake-up time.
+* Store music file in device, play them at wake-up time.
+* Read unread facebook messages, out-loud, with a quite piano music in the background to wake up on the right foot.
+    * Tap screen to switch to a banging switch totake other foot out of bed.
+
+## ToDo
+
+* Add name to settings
+* Fetch music from the internet 
+* Read emails
+* Polish UI/UX
 
 
